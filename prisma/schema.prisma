@@ -16,6 +16,7 @@ model Admin{
   lastName String 
   email String @unique
   username String @unique
+  password String
   nationalId String @unique
   level String
   createdAt DateTime @default(now())
