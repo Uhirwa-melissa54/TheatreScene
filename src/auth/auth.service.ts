@@ -1,5 +1,5 @@
 export class AuthService{
-    async signUp(){
-        
+    async signUp(admindto:AdminDto){
+
     }
 }
