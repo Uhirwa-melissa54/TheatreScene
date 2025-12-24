@@ -13,7 +13,7 @@ export class AuthService{
           firstName:admindto.firstName,
           lastName:admindto.lastName,
           email:admindto.email,
-          password:admindto.password,
+          password:hashedPassword,
           level:admindto.level,
           username:admindto.username,
           nationalId:admindto.nationalId
