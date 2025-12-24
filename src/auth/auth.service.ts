@@ -9,7 +9,7 @@ export class AuthService{
     ){}
     async signUp(admindto:AdminDto){
     const hashedPassword=await argon2.hash(admindto.password)
-     const admin = await this.prisma.user.create({
+     const admin = await this.prisma.admin.create({
         data: {
           firstName:admindto.firstName,
           lastName:admindto.lastName,
@@ -27,7 +27,7 @@ export class AuthService{
     }
     async login(logindto: LoginDto) {
   
-  const user = await this.prisma.user.findUnique({
+  const user = await this.prisma.admin.findUnique({
     where: { email: logindto.email },
   });
 
