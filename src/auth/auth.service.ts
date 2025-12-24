@@ -1,6 +1,7 @@
 import { AdminDto } from "src/dto/AdminDto";
 import * as argon2 from "argon2";
 import { PrismaService } from "src/prisma/prisma.service";
+import { LoginDto } from "src/dto/LoginAdminDto";
 
 export class AuthService{
     constructor(
